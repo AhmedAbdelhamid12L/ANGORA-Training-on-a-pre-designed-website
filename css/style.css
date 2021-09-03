@@ -1,0 +1,528 @@
+/* ===== some popular style =====  */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Poppins", sans-serif;
+}
+
+.font-f1 {
+  font-family: "Poppins", sans-serif;
+}
+
+.font-f2 {
+  font-family: "Open Sans", sans-serif;
+}
+
+.paraghraph-style-1 {
+  color: #999;
+  font-family: "Open Sans", sans-serif;
+  width: 45rem;
+  font-size: 1.1rem;
+}
+
+.paraghraph-style-2 {
+  color: #666;
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.paraghraph-style-3 {
+  color: #444;
+  font-family: "Open Sans", sans-serif;
+}
+
+@media screen and (max-width: 992px) and (min-width: 590px) {
+  .paraghraph-style-1 {
+    width: 30rem !important;
+  }
+
+  .home-content-one h1,
+  .home-content-two h1,
+  .home-content-three h1 {
+    font-size: 50px !important;
+  }
+
+  .home-content-one,
+  .home-content-two,
+  .home-content-three {
+    width: 30rem !important;
+  }
+}
+
+@media screen and (max-width: 590px) and (min-width: 0px) {
+  .paraghraph-style-1 {
+    width: 70% !important;
+  }
+
+  .home-content-one h1,
+  .home-content-two h1,
+  .home-content-three h1 {
+    font-size: 40px !important;
+  }
+
+  .home-content-one,
+  .home-content-two,
+  .home-content-three {
+    width: 20rem !important;
+  }
+}
+
+.color-1 {
+  color: #f25454 !important;
+}
+
+.bg-1 {
+  background-color: #f25454;
+}
+
+/* ========     fixed icon   ======== */
+
+.fixed-icon {
+  position: fixed;
+  left: 0%;
+  top: 100px;
+  z-index: 10;
+}
+
+.fixed-icon .cogs {
+  text-decoration: none;
+  color: white;
+  background-color: #222;
+  padding: 0.5rem 0.65rem;
+}
+
+/* ========       offcanvas   ======== */
+
+.offcanvas-start {
+  top: 100px;
+  bottom: 300px;
+  width: 300px;
+}
+
+/* ===== home section =====  */
+.home-one {
+  background-image: url(../images/slideshow-3.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+
+.home-two {
+  background-image: url(../images/slideshow-2.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+
+.home-three {
+  background-image: url(../images/slideshow-1.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+
+.home-content-one,
+.home-content-two,
+.home-content-three {
+  height: 100vh;
+  margin: auto;
+  width: 40rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.home-content-one h1,
+.home-content-two h1,
+.home-content-three h1 {
+  font-size: 70px;
+  color: #fff;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  padding-top: 5rem;
+}
+
+.change-color {
+  transition: all 0.25s;
+  cursor: pointer;
+}
+
+.change-color:hover {
+  color: #f25454 !important;
+}
+
+/* ===== about section =====  */
+
+.progress-bar {
+  background-color: #f25454;
+}
+
+.about-left {
+  display: flex;
+}
+
+.about-left h4 {
+  padding: 0% !important;
+  margin-bottom: 0.25rem !important;
+}
+
+.about-left p {
+  padding: 0px !important;
+  margin-bottom: 0.25rem !important;
+}
+
+.bg-eee {
+  background-color: #fafafa;
+}
+
+.p-7 {
+  padding: 4rem;
+}
+.w-new {
+  width: 59%;
+}
+
+.heading-top-about {
+  position: relative;
+  z-index: 3;
+}
+
+.heading-top-about::after {
+  content: "A";
+  position: absolute;
+  left: 50%;
+  bottom: 0.25rem;
+  transform: translateX(-50%);
+  color: rgb(219, 214, 214);
+  opacity: 0.6;
+  font-size: 3.5rem;
+  font-weight: bolder;
+  z-index: -1;
+}
+
+.heading-top-about::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -30%;
+  width: 40px;
+  height: 1px;
+  background-color: black;
+  transition: all 0.25s;
+}
+
+.head-sec:hover .heading-top-about::before {
+  width: 55px;
+}
+
+.text-4e {
+  color: #808080;
+}
+
+/* ===== team section =====  */
+
+.heading-top-team {
+  position: relative;
+  z-index: 3;
+}
+
+.heading-top-team::after {
+  content: "O";
+  position: absolute;
+  left: 50%;
+  bottom: 0.25rem;
+  transform: translateX(-50%);
+  color: rgb(219, 214, 214);
+  opacity: 0.6;
+  font-size: 3.5rem;
+  font-weight: bolder;
+  z-index: -1;
+}
+
+.heading-top-team::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -30%;
+  width: 40px;
+  height: 1px;
+  background-color: black;
+  transition: all 0.25s;
+}
+
+.head-sec:hover .heading-top-team::before {
+  width: 55px;
+}
+
+.team .team-parent {
+  overflow: hidden;
+}
+
+.team .team-parent img {
+  transition: all 0.25s;
+}
+
+.team:hover .team-parent img {
+  transform: scale(1.15);
+}
+
+.team .team-parent .bg-translat {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 0%;
+  bottom: 0%;
+  right: 0%;
+  left: 0%;
+  background-color: rgba(242, 84, 84, 0.7);
+  opacity: 0;
+  transition: all 0.25s;
+}
+
+.team:hover .team-parent .bg-translat {
+  opacity: 1;
+}
+
+.team .team-child {
+  transition: all 0.25s;
+}
+
+.team:hover .team-child {
+  color: #f25454 !important;
+}
+
+/* ===== services section =====  */
+
+.heading-top-services {
+  position: relative;
+  z-index: 3;
+}
+
+.heading-top-services::after {
+  content: "S";
+  position: absolute;
+  left: 50%;
+  bottom: 0.25rem;
+  transform: translateX(-50%);
+  color: rgb(219, 214, 214);
+  opacity: 0.6;
+  font-size: 3.5rem;
+  font-weight: bolder;
+  z-index: -1;
+}
+
+.heading-top-services::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -30%;
+  width: 40px;
+  height: 1px;
+  background-color: black;
+  transition: all 0.25s;
+}
+
+.head-sec:hover .heading-top-services::before {
+  width: 55px;
+}
+
+.fs-7 {
+  font-size: 0.85rem;
+}
+
+/* ===== Client Reviews section =====  */
+
+.heading-top-client {
+  position: relative;
+  z-index: 3;
+}
+
+.heading-top-client::after {
+  content: "C";
+  position: absolute;
+  left: 50%;
+  bottom: 0.25rem;
+  transform: translateX(-50%);
+  color: rgb(219, 214, 214);
+  opacity: 0.6;
+  font-size: 3.5rem;
+  font-weight: bolder;
+  z-index: -1;
+}
+
+.heading-top-client::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -30%;
+  width: 40px;
+  height: 1px;
+  background-color: black;
+  transition: all 0.25s;
+}
+
+.head-sec:hover .heading-top-client::before {
+  width: 55px;
+}
+
+.nav-tabs .nav-item.show .nav-link,
+.nav-tabs .nav-link.active {
+  opacity: 1;
+  background-color: transparent;
+  border-color: none;
+  width: 10rem;
+}
+.nav-tabs .nav-link {
+  margin-bottom: none;
+  background: none;
+  border: none;
+  border-top-left-radius: none;
+  border-top-right-radius: none;
+  display: inline-block;
+  width: 8rem;
+}
+
+.nav {
+  border: none;
+}
+
+.nav-link {
+  opacity: 0.6;
+  background-color: transparent;
+}
+
+/* ===== contact section =====  */
+
+.heading-top-contact {
+  position: relative;
+  z-index: 3;
+}
+
+.heading-top-contact::after {
+  content: "G";
+  position: absolute;
+  left: 50%;
+  bottom: 0.25rem;
+  transform: translateX(-50%);
+  color: rgb(219, 214, 214);
+  opacity: 0.6;
+  font-size: 3.5rem;
+  font-weight: bolder;
+  z-index: -1;
+}
+
+.heading-top-contact::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -30%;
+  width: 40px;
+  height: 1px;
+  background-color: black;
+  transition: all 0.25s;
+}
+
+.head-sec:hover .heading-top-contact::before {
+  width: 55px;
+}
+
+.btn-contact {
+  background-color: #f25454;
+  border: none;
+  color: white;
+  border-radius: 0.25rem;
+  transition: all 0.25s;
+}
+
+.btn-contact:hover {
+  opacity: 0.7;
+}
+
+.contact-left h2 {
+  transition: all 0.25s;
+}
+
+.contact-left:hover h2 {
+  color: #f25454;
+}
+
+/* ===== footer section =====  */
+
+.footer-dowen {
+  background-color: #1a1a1a;
+}
+
+.footer-dowen h5 span {
+  transition: all 0.25s;
+  cursor: pointer;
+}
+
+.footer-dowen h5 span:hover {
+  color: #f25454 !important;
+}
+
+.footer-up {
+  position: relative;
+  clear: both;
+  background: #222;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-image: url(../images/dotted-map.png);
+  background-size: contain;
+}
+
+.foot-links a {
+  transition: all 0.25s;
+  display: block;
+}
+
+.foot-links a:hover {
+  color: #f25454;
+}
+
+.foot-contant a {
+  transition: all 0.25s;
+  display: inline-block;
+  border: #808080 solid 1px;
+  border-radius: 0.25rem;
+  padding: 0.15rem 0.25rem;
+  margin: 0.15rem;
+}
+
+.foot-contant a:hover {
+  color: #f25454;
+  border-color: #f25454;
+}
+
+.angle-up-parent {
+  transform: translateY(-300%);
+}
+
+.angle-up {
+  text-decoration: none;
+  color: white;
+  background-color: #f25454;
+  padding: 1rem 1.15rem;
+  opacity: 0.5;
+  border-radius: 50%;
+}
+
+.angle-up:hover {
+  opacity: 1;
+  color: white;
+}
